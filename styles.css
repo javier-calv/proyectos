@@ -1,0 +1,69 @@
+
+.tarjetas {
+  text-align: center;
+  display: flex;       /* display para mayor flexibilidad de las tarjetas */
+  gap: 20px;       /* separación entre tarjetas */
+  justify-content: center;  /* centra las tarjetas horizontalmente */
+}
+
+.tarjeta1 , .tarjeta2, .tarjeta3 {
+  width: 280px;    /* mismo ancho */
+  height: 440px;   /* mismo alto */
+  background: #fff; /* fondo blanco */
+  border: 2px solid #ccc; /* borde gris claro */
+  text-align: center; /* centra el texto */
+  padding: 10px; /* separa el contenido del borde */
+  display: inline-block;
+  border-radius: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.tarjetas img {
+  width: 140px;  
+  background-image: url('/imagenes/blastoise.png');
+  background-image: url('/imagenes/wartotle.png');
+  background-image: url('/imagenes/squirtle.jpg');
+  height: 140px;
+  object-fit: contain; /* proporciona la imagen */
+  display: block; /* elimina espacio debajo de la imagen */
+  margin: 0 auto 10px auto;  /* la distancia entre todas las cosas */
+  border-radius: 10px;
+}
+header{
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #96a0f8;
+  color: rgb(46, 69, 88);
+  padding: 10px 20px;
+  text-align: center;
+  z-index: 1000%;
+
+}
+main{
+  margin-top: 60px;
+  padding: 20px;
+}
+.cabeza{
+  font-size: 25px;
+}
+.pie{
+  margin-top: 10px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.cuerpo img{
+  width: 100px;
+  display: block;
+}
+
+
+.tarjetas {
+  transition: transform 0.5s ease;
+}
+.tarjeta1:hover, .tarjeta2:hover, .tarjeta3:hover {
+  transform: scale(1.06); /* crece 5% */
+}
